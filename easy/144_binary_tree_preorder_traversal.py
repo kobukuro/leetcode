@@ -6,19 +6,33 @@ class TreeNode:
 
 
 # recursive version
+# class Solution:
+#
+#     def preorderTraversal(self, root):
+#         # root -> left -> right
+#         def preorder(node):
+#             if node:
+#                 ans.append(node.val)
+#                 preorder(node.left)
+#                 preorder(node.right)
+#
+#         ans = []
+#         preorder(root)
+#         return ans
+
+# iterative  version
 class Solution:
-
     def preorderTraversal(self, root):
-        # root -> left -> right
-        def preorder(node):
-            if node:
-                ans.append(node.val)
-                preorder(node.left)
-                preorder(node.right)
-
-        ans = []
-        preorder(root)
-        return ans
+        stack = [root]
+        result = []
+        while stack != []:
+            root = stack.pop()
+            result.append(root.val)
+            if root.right is not None:
+                stack.append(root.right)
+            if root.left is not None:
+                stack.append(root.left)
+        return result
 
 
 if __name__ == '__main__':

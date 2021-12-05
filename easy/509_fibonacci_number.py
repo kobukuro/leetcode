@@ -1,4 +1,5 @@
 # recursive solution
+# memoization, keys will be arg to fn, value will be return value
 def fib(n, memo={}):
     if n in memo:
         return memo[n]

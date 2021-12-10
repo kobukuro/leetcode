@@ -1,4 +1,4 @@
-# Runtime: O(n log(n)) average, O(n2) worst case. Memory: 0(log(n)).
+# Runtime: O(n log(n)) average, O(n2) worst case. Memory: O(log(n)).
 import math
 
 

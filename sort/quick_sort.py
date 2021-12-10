@@ -15,14 +15,12 @@ def partition(arr, left, right, pivot):
 
 
 def quick_sort(arr, left, right):
-    if left > right:
+    if left >= right:
         return
     pivot = arr[math.floor((left + right) / 2)]
     index = partition(arr, left, right, pivot)
-    if left < index - 1:
-        quick_sort(arr, left, index - 1)
-    if right > index:
-        quick_sort(arr, index, right)
+    quick_sort(arr, left, index - 1)
+    quick_sort(arr, index, right)
 
 
 if __name__ == '__main__':

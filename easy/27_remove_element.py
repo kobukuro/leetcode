@@ -1,3 +1,4 @@
+# Array
 def remove_element(nums, val):
     total = len(nums)
     for i in range(len(nums)):

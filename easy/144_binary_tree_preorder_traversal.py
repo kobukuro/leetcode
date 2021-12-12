@@ -22,18 +22,35 @@ class TreeNode:
 #         return ans
 
 # iterative  version
+# class Solution:
+#     def preorderTraversal(self, root):
+#         stack = [root]
+#         result = []
+#         while stack != []:
+#             root = stack.pop()
+#             result.append(root.val)
+#             if root.right is not None:
+#                 stack.append(root.right)
+#             if root.left is not None:
+#                 stack.append(root.left)
+#         return result
+
+
+# iterative  version 2
 class Solution:
     def preorderTraversal(self, root):
-        stack = [root]
-        result = []
-        while stack != []:
-            root = stack.pop()
-            result.append(root.val)
-            if root.right is not None:
-                stack.append(root.right)
-            if root.left is not None:
-                stack.append(root.left)
-        return result
+        res = []
+        stack = [(root, False)]
+        while stack:
+            node, visited = stack.pop()
+            if node:
+                if visited:
+                    res.append(node.val)
+                else:
+                    stack.append((node.right, False))
+                    stack.append((node.left, False))
+                    stack.append((node, True))
+        return res
 
 
 if __name__ == '__main__':

@@ -26,7 +26,18 @@ class TreeNode:
 # iterative  version
 class Solution:
     def postorderTraversal(self, root):
-        pass
+        ans = []
+        stack = [(root, False)]
+        while stack:
+            node, visited = stack.pop()
+            if node:
+                if visited:
+                    ans.append(node.val)
+                else:
+                    stack.append((node, True))
+                    stack.append((node.right, False))
+                    stack.append((node.left, False))
+        return ans
 
 
 if __name__ == '__main__':

@@ -22,18 +22,42 @@ class TreeNode:
 #         return ans
 
 # iterative  version
+# class Solution:
+#     def inorderTraversal(self, root):
+#         stack = []
+#         result = []
+#         while root or stack != []:
+#             while root:
+#                 stack.append(root)
+#                 root = root.left
+#             root = stack.pop()
+#             result.append(root.val)
+#             root = root.right
+#         return result
+
+
+# iterative  version 2
 class Solution:
     def inorderTraversal(self, root):
-        stack = []
-        result = []
-        while root or stack != []:
-            while root:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            result.append(root.val)
-            root = root.right
-        return result
+        res = []
+
+        stack = [(root, False)]
+
+        while stack:
+
+            node, visited = stack.pop()
+
+            if node:
+                if visited:
+                    res.append(node.val)
+
+
+                else:
+                    stack.append((node.right, False))
+                    stack.append((node, True))
+                    stack.append((node.left, False))
+
+        return res
 
 
 if __name__ == '__main__':

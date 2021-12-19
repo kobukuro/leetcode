@@ -1,6 +1,8 @@
 # Dynamic Programming
 class Solution:
-    def combinationSum4(self, nums, target, memo={}):
+    def combinationSum4(self, nums, target, memo=None):
+        if memo is None:
+            memo = {}
         if target in memo:
             return memo[target]
         if target == 0:

@@ -1,3 +1,4 @@
+# Hash Table
 def two_sum(nums, target):
     # 這裡使用dictionary，
     # 因為for the purpose of an interview, we often just summarize that

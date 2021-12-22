@@ -1,3 +1,4 @@
+# Dynamic Programming
 def maxProfit(prices):
     buy_price = prices[0]
     max_profit = 0

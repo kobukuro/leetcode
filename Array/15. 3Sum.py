@@ -1,4 +1,4 @@
-# Array
+# Array, Two Pointers, Sorting
 # reference:https://www.youtube.com/watch?v=jzZsG8n2R9A
 class Solution:
     def threeSum(self, nums):

@@ -1,4 +1,4 @@
-# Array
+# Array, Divide and Conquer, Dynamic Programming
 # reference:https://www.youtube.com/watch?v=5WZl3MMT0Eg
 class Solution:
     def maxSubArray(self, nums):

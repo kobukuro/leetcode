@@ -1,4 +1,4 @@
-# Array
+# Array, Two Pointers, Binary Search
 class Solution:
     def twoSum(self, numbers, target):
         l = 0

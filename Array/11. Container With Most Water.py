@@ -1,4 +1,4 @@
-# Array
+# Array, Two Pointers, Greedy
 # reference:https://www.youtube.com/watch?v=UuiTKBwPgAo
 class Solution:
     def maxArea(self, height):

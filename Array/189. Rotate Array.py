@@ -1,4 +1,4 @@
-# Array
+# Array, Math, Two Pointers
 class Solution(object):
     def rotate(self, nums, k):
         if k is None or k <= 0:

@@ -1,4 +1,4 @@
-# Array
+# Array, Two Pointers, Sorting
 class Solution:
     def fourSum(self, nums, target):
         if len(nums) < 4:

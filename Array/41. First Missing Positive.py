@@ -1,4 +1,4 @@
-# Array
+# Array, Hash Table
 def first_missing_positive(nums):
     # 出處：https://www.youtube.com/watch?v=8g78yfzMlao
     # 要找出first missing positive number，其實這個數字一定存在於[1,...len(nums)+1]裡

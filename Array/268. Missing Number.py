@@ -1,4 +1,4 @@
-# Array
+# Array, Hash Table, Math, Bit Manipulation, Sorting
 class Solution:
     def missingNumber(self, nums):
         ans = 0

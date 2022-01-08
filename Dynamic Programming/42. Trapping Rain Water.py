@@ -1,4 +1,4 @@
-# Dynamic Programming
+# Dynamic Programming, Array, Two Pointers, Stack, Monotonic Stack
 # not efficient solution
 # class Solution:
 #     def trap(self, height):

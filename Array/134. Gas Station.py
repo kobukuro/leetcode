@@ -1,4 +1,4 @@
-# Array
+# Array, Greedy
 # reference: https://www.youtube.com/watch?v=lJwbPZGo05A
 class Solution:
     def canCompleteCircuit(self, gas, cost):

@@ -1,4 +1,4 @@
-# String
+# String, Stack
 # reference:https://www.youtube.com/watch?v=Ec2SJvjxYEs
 # class Solution:
 #     def removeDuplicates(self, s):

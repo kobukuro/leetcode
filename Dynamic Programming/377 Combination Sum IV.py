@@ -1,4 +1,4 @@
-# Dynamic Programming
+# Dynamic Programming, Array
 class Solution:
     def combinationSum4(self, nums, target, memo=None):
         if memo is None:

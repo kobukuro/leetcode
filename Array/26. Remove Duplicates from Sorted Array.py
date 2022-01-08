@@ -1,4 +1,4 @@
-# Array
+# Array, Two Pointers
 class Solution:
     def removeDuplicates(self, nums):
         a = 0

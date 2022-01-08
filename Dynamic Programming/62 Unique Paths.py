@@ -1,6 +1,8 @@
-# Dynamic Programming
+# Dynamic Programming, Math, Combinatorics
 class Solution:
-    def uniquePaths(self, m, n, memo={}):
+    def uniquePaths(self, m, n, memo=None):
+        if memo is None:
+            memo = {}
         key = (m, n)
         if key in memo:
             return memo[key]

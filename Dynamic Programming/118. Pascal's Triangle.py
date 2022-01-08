@@ -1,4 +1,4 @@
-# Dynamic Programming
+# Dynamic Programming, Array
 class Solution:
     def generate(self, numRows):
         def helper(num, index, memo=None):

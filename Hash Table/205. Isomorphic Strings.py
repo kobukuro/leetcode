@@ -1,5 +1,5 @@
 # Hash Map, String
-# need to be improved
+# TODO need to be improved
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         i = 0

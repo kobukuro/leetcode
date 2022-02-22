@@ -10,4 +10,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().titleToNumber(columnTitle='AAA'))
+    print(Solution().titleToNumber(columnTitle='BA'))

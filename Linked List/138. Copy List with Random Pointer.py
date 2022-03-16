@@ -5,7 +5,7 @@ class Node:
         self.next = next
         self.random = random
 
-
+# Time:O(n), Space:O(n)
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if head is None:

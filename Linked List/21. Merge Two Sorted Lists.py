@@ -6,6 +6,7 @@ class ListNode:
         self.next = next
 
 
+# Time:O(n+m), Space:O(1)
 class Solution:
     def mergeTwoLists(self, list1, list2):
         if list1 is None:

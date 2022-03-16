@@ -7,6 +7,7 @@ class ListNode:
 
 
 # Time:O(n+m), Space:O(1)
+# Time:O(n+m):因為當smaller list的最後一個值是所有值裡最大的, 那還是要把list1以及list2都traverse過
 class Solution:
     def mergeTwoLists(self, list1, list2):
         if list1 is None:

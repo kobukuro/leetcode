@@ -46,3 +46,21 @@ class Solution:
         if second_ptr:
             curr.next = second_ptr
         return dummy.next
+
+
+from heapq import heappush, heappop
+
+
+class HeapSolution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        min_heap = []
+        for item in lists:
+            while item:
+                heappush(min_heap, item.val)
+                item = item.next
+        # print(min_heap)
+        dummy = curr = ListNode(-1)
+        while min_heap:
+            curr.next = ListNode(val=heappop(min_heap))
+            curr = curr.next
+        return dummy.next

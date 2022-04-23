@@ -1,18 +1,13 @@
 # Array, Hash Table, Sorting
-# TODO need to be improved
-from typing import List
-
-
+# Time:O(n), Space:O(n)
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hash_map = {}
-        i = 0
-        while i < len(nums):
+        for i in range(len(nums)):
             if nums[i] not in hash_map:
                 hash_map[nums[i]] = 1
             else:
                 return True
-            i += 1
         return False
 
 

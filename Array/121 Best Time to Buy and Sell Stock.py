@@ -1,4 +1,5 @@
-# Dynamic Programming, Array
+# Array, Dynamic Programming
+# Time: O(n), Space:O(1)
 def maxProfit(prices):
     buy_price = prices[0]
     max_profit = 0

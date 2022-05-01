@@ -1,13 +1,15 @@
 # Array, Dynamic Programming
-# Time: O(n), Space:O(1)
+# Time: O(n) Only a single pass is needed.
+# Space:O(1) Only two variables are used.
 def maxProfit(prices):
-    buy_price = prices[0]
     max_profit = 0
+    buy_price = sys.maxsize
     for i in range(len(prices)):
         if prices[i] < buy_price:
             buy_price = prices[i]
-        if prices[i] - buy_price > max_profit:
-            max_profit = prices[i] - buy_price
+        elif prices[i] > buy_price:
+            curr_profit = prices[i] - buy_price
+            max_profit = max(max_profit, curr_profit)
     return max_profit
 
 

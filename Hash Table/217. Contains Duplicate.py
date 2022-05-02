@@ -1,11 +1,12 @@
 # Array, Hash Table, Sorting
-# Time:O(n), Space:O(n)
+# Time:O(n), We do search() and insert() for n times and each operation takes constant time.
+# Space:O(n), The space used by a hash table is linear with the number of elements in it.
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        hash_map = {}
-        for i in range(len(nums)):
-            if nums[i] not in hash_map:
-                hash_map[nums[i]] = 1
+        lookup = set()
+        for num in nums:
+            if num not in lookup:
+                lookup.add(num)
             else:
                 return True
         return False

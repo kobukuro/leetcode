@@ -1,15 +1,14 @@
 # Array, Divide and Conquer, Dynamic Programming
-# reference:https://www.youtube.com/watch?v=5WZl3MMT0Eg
+# Time:O(n), Space:O(1)
 class Solution:
     def maxSubArray(self, nums):
-        max_sum = nums[0]
-        curr_sum = 0
-        for n in nums:
+        res = curr_sum = nums[0]
+        for i in range(1, len(nums)):
             if curr_sum < 0:
                 curr_sum = 0
-            curr_sum += n
-            max_sum = max(max_sum, curr_sum)
-        return max_sum
+            curr_sum += nums[i]
+            res = max(res, curr_sum)
+        return res
 
 
 if __name__ == '__main__':

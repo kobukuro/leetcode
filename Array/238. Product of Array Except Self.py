@@ -1,4 +1,5 @@
 # Array, Prefix Sum
+# Time:O(n), Space:O(n)
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         prefix = []

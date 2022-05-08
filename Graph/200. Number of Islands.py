@@ -34,6 +34,9 @@ from collections import deque
 #         return islands
 
 # dfs solution
+# m = # of rows, n = # of cols
+# Time Complexity: O(mn)
+# Space Complexity: O(mn)
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         rows, cols = len(grid), len(grid[0])

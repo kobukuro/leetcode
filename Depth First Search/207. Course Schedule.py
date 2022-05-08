@@ -5,11 +5,13 @@ from typing import List
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        # V:# of courses, E:# of dependencies
+        # Time:O(V+E), Space:O(V+E)
         pre_map = {i: [] for i in range(numCourses)}
         for pair in prerequisites:
             pre_map[pair[0]].append(pair[1])
-        visited = set()
         # print(pre_map)
+        visited = set()
 
         def dfs(crs):
             if crs in visited:
@@ -20,14 +22,14 @@ class Solution:
             for pre in pre_map[crs]:
                 if not dfs(pre):
                     return False
+                else:
+                    pre_map[crs].remove(pre)
             visited.remove(crs)
-            pre_map[crs] = []
             return True
 
         for c in range(numCourses):
             if not dfs(c):
                 return False
-
         return True
 
 

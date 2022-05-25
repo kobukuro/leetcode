@@ -10,3 +10,17 @@ class Solution:
             prev = curr
             curr = nxt
         return prev
+
+
+# recursive solution Time O(n),
+# Space O(n):The extra space comes from implicit stack space due to recursion.
+# The recursion could go up to n levels deep.
+class RecursiveSolution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+
+        new_head = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return new_head

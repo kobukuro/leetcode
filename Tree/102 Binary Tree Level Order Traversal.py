@@ -7,6 +7,12 @@ class TreeNode:
 
 
 class Solution:
+    # Time complexity : O(N) since each node is processed exactly once.
+    # Space complexity: The space complexity for BFS is O(w) where w is the maximum width of the tree.
+    # Due to the nature of BFS, at any given moment, the queue holds no more than two levels of nodes.
+    # In the worst case, a level in a full binary tree contains at most half of the total nodes
+    # (i.e. N/2), i.e. this is also the level where the leaf nodes reside.
+    # Hence, the overall space complexity of the algorithm is O(N). (/2 could be ignored)
     def levelOrder(self, root):
         if not root:
             return []

@@ -1,22 +1,25 @@
 # String, Stack
+# Time complexity : O(n)
+# because we simply traverse the given string one character at a time
+# and push and pop operations on a stack take O(1) time.
+
+# Space complexity : O(n) as we push all opening brackets onto the stack
+# and in the worst case, we will end up pushing all the brackets onto the stack. e.g. ((((((((((.
 class Solution:
     def isValid(self, s: str) -> bool:
-        mapping = {'(': ')', '[': ']', '{': '}'}
-        stack1 = []
-        for sub in s:
-            stack1.append(sub)
-        stack2 = []
-        while stack1:
-            curr = stack1.pop()
-            if curr not in mapping.keys():
-                stack2.append(curr)
+        mapping = {')': '(',
+                   ']': '[',
+                   '}': '{'}
+        stack = []
+        for ele in s:
+            if ele not in mapping:
+                stack.append(ele)
             else:
-                if not stack2:
+                if not stack:
                     return False
                 else:
-                    temp = stack2.pop()
-                    if mapping[curr] != temp:
+                    if mapping[ele] != stack.pop():
                         return False
-        if stack2:
+        if stack:
             return False
         return True

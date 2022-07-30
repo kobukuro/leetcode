@@ -4,6 +4,7 @@ from typing import List
 
 # n is the length of the input string.
 # Time complexity : O(n^3).
+# first n is the recursion, second n is the for loop, and third n is due to substring
 # Space complexity : O(n). The depth of recursion tree can go up to n.
 class MemoizationSolution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:

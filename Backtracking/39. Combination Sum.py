@@ -52,6 +52,7 @@ class Solution:
                 backtrack(remain - candidates[i], comb, i)
                 # backtrack, remove the number from the combination
                 comb.pop()
+            # print(comb)
 
         backtrack(target, [], 0)
 
@@ -59,6 +60,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    candidates = [3, 4, 5]
+    candidates = [2, 3, 5]
     target = 8
-    Solution().combinationSum(candidates, target)
+    print(Solution().combinationSum(candidates, target))

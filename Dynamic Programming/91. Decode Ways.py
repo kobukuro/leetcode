@@ -1,5 +1,60 @@
 # String, Dynamic Programming
 
+# Time Complexity: O(N), where N is length of the string.
+# Memoization helps in pruning the recursion tree and hence decoding for an index only once.
+# Thus this solution is linear time complexity.
+
+# Space Complexity: O(N).
+# The dictionary used for memoization would take the space equal to the length of the string.
+# There would be an entry for each index value.
+# The recursion stack would also be equal to the length of the string.
+class BetterMemoizationSolution:
+    def numDecodings(self, s: str) -> int:
+        def can_decode(input_str):
+            if input_str[0] == '0':
+                return False
+            if 0 <= int(input_str) <= 26:
+                return True
+            else:
+                return False
+
+        def dfs(s, start, memo=None):
+            if memo is None:
+                memo = {}
+            if start in memo:
+                return memo[start]
+            if start == len(s):
+                return 1
+            val = 0
+            for_end = start + 2 if len(s[start:]) == 1 else start + 3
+            for end in range(start + 1, for_end):
+                if can_decode(s[start:end]):
+                    val += dfs(s, end, memo)
+            memo[start] = val
+            return memo[start]
+
+        return dfs(s, 0)
+
+
+# Time Complexity: O(N), where N is length of the string.
+# We iterate the length of dp array which is N+1.
+# Space Complexity: O(N). The length of the DP array.
+class BetterTabulationSolution:
+    def numDecodings(self, s: str) -> int:
+        dp = [0] * (len(s) + 1)
+        dp[-1] = 1
+        for start in range(len(s) - 1, -1, -1):
+            if s[start] == '0':
+                continue
+            if len(s[start:]) == 1:
+                dp[start] += dp[start + 1]
+            else:
+                dp[start] += dp[start + 1]
+                if int(s[start:start + 2]) <= 26:
+                    dp[start] += dp[start + 2]
+        return dp[0]
+
+
 # n is the length of the input string.
 # Time complexity : O(n^3).
 # first n is the recursion (we keep track of how many times word break is being called),

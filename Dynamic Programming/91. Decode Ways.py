@@ -46,10 +46,8 @@ class BetterTabulationSolution:
         for start in range(len(s) - 1, -1, -1):
             if s[start] == '0':
                 continue
-            if len(s[start:]) == 1:
-                dp[start] += dp[start + 1]
-            else:
-                dp[start] += dp[start + 1]
+            dp[start] += dp[start + 1]
+            if len(s[start:]) >= 2:
                 if int(s[start:start + 2]) <= 26:
                     dp[start] += dp[start + 2]
         return dp[0]

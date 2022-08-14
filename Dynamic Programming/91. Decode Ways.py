@@ -13,7 +13,7 @@ class BetterMemoizationSolution:
         def can_decode(input_str):
             if input_str[0] == '0':
                 return False
-            if 0 <= int(input_str) <= 26:
+            if 1 <= int(input_str) <= 26:
                 return True
             else:
                 return False

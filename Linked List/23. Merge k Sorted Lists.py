@@ -1,5 +1,8 @@
 # Linked List, Divide and Conquer, Heap(Priority Queue), Merge Sort
 # reference:https://www.youtube.com/watch?v=q5a5OiGbT6Q
+from typing import List, Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -51,7 +54,26 @@ class Solution:
 from heapq import heappush, heappop
 
 
+# reference:https://www.youtube.com/watch?v=RCuBc4Zl-oY
+# reference:https://www.youtube.com/watch?v=ptYUCjfNhJY
 class HeapSolution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        min_heap = []
+        for index, l in enumerate(lists):
+            if l:
+                heappush(min_heap, (l.val, index))
+        dummy = curr = ListNode()
+        while min_heap:
+            val, i = heappop(min_heap)
+            curr.next = ListNode(val=val)
+            if lists[i].next:
+                heappush(min_heap, (lists[i].next.val, i))
+                lists[i] = lists[i].next
+            curr = curr.next
+        return dummy.next
+
+
+class HeapAnotherSolution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         min_heap = []
         for item in lists:
@@ -64,3 +86,10 @@ class HeapSolution:
             curr.next = ListNode(val=heappop(min_heap))
             curr = curr.next
         return dummy.next
+
+
+if __name__ == '__main__':
+    lists = [ListNode(val=1, next=ListNode(val=4, next=ListNode(val=5))),
+             ListNode(val=1, next=ListNode(val=3, next=ListNode(val=4))),
+             ListNode(val=2, next=ListNode(val=6))]
+    HeapSolution().mergeKLists(lists)

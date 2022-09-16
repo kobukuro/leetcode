@@ -1,4 +1,14 @@
 # Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
+from typing import List
+
+
+# Time complexity: O(M*N),
+# where M is the number of rows and N is the number of columns.
+# The dfs function runs exactly once for each cell accessible from an ocean.
+
+# Space complexity: O(M*N),
+# where M is the number of rows and N is the number of columns.
+# Space is occupied by dfs calls on the recursion stack.
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         rows = len(heights)

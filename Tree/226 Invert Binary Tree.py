@@ -6,19 +6,18 @@ class TreeNode:
         self.right = right
 
 
+# n:the number of nodes in the tree
+# Time:O(n)
+# Space:O(n)
 class Solution:
     def invertTree(self, root):
         if not root:
-            return None
-
-        def helper(node):
-            node.left, node.right = node.right, node.left
-            if node.left:
-                helper(node.left)
-            if node.right:
-                helper(node.right)
-
-        helper(node=root)
+            return root
+        root.left, root.right = root.right, root.left
+        if root.left:
+            self.invertTree(root.left)
+        if root.right:
+            self.invertTree(root.right)
         return root
 
 

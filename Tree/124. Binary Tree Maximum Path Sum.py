@@ -17,7 +17,7 @@ class TreeNode:
 # including two recursive calls and calculating the max path sum for the current node.
 # So the time complexity is O(n).
 
-# Space complexity: O(n)O(n)
+# Space complexity: O(n)
 # We don't use any auxiliary data structure,
 # but the recursive call stack can go as deep as the tree's height.
 # In the worst case, the height of tree is n. Therefore, the space complexity is O(n).

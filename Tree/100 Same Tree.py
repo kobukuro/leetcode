@@ -25,6 +25,19 @@ class Solution:
         return self.preOrderTraversal(p) == self.preOrderTraversal(q)
 
 
+class AnotherSolution:
+    def isSameTree(self, p, q):
+        if not p and not q:
+            return True
+        if p and not q:
+            return False
+        if q and not p:
+            return False
+        if p.val != q.val:
+            return False
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+
 if __name__ == '__main__':
     p = TreeNode(val=1,
                  left=TreeNode(val=1))

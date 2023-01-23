@@ -10,6 +10,21 @@ class TreeNode:
         self.right = right
 
 
+# N is the number of nodes in the tree rooted at the root
+# M is the number of nodes in the tree rooted at subRoot
+# Time complexity: O(MN).
+# For every N node in the tree,
+# we check if the tree rooted at node is identical to subRoot.
+# This check takes O(M) time, where M is the number of nodes in subRoot.
+# Hence, the overall time complexity is O(MN).
+# Space complexity: O(M+N).
+# There will be at most N recursive call to isSubtree.
+# Now, each of these calls will have M recursive calls to is_same_tree.
+# Before calling is_same_tree, our call stack has at most O(N) elements
+# and might increase to O(N+M) during the call.
+# After calling is_same_tree,
+# it will be back to at most O(N) since all elements made by is_same_tree are popped out.
+# Hence, the maximum number of elements in the call stack will be M+N.
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         if not subRoot:

@@ -9,6 +9,29 @@ class ListNode:
         self.next = next
 
 
+# Time complexity : O(NlogN) where N is the total number of nodes.
+# Collecting all the values costs O(N) time.
+# A stable sorting algorithm costs O(NlogN) time.
+# Iterating for creating the linked list costs O(N) time.
+# Space complexity : O(N).
+# Sorting costs O(N) space (depends on the algorithm you choose).
+# Creating a new linked list costs O(N) space.
+class BruteForceSolution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        vals = []
+        for l in lists:
+            while l:
+                vals.append(l.val)
+                l = l.next
+        vals.sort()
+        dummy = ListNode(val=-1)
+        curr = dummy
+        for val in vals:
+            curr.next = ListNode(val=val)
+            curr = curr.next
+        return dummy.next
+
+
 class Solution:
     def mergeKLists(self, lists) -> ListNode:
         if not lists or len(lists) == 0:

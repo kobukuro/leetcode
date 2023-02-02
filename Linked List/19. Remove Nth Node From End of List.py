@@ -1,9 +1,22 @@
 # Linked List, Two Pointers
+from typing import Optional
+
+
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+# L is the length of linked list
+# Time complexity :O(L).
+# The algorithm makes two traversal of the list, first to calculate list length L
+# and second to find the (L−n) th node.
+# There are 2L−n operations and time complexity is O(L).
+
+# Space complexity : O(1).
+# We only used constant extra space.
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         # reference:https://labuladong.gitee.io/algo/2/18/17/
@@ -23,7 +36,6 @@ class Solution:
                 target = target.next
             return target
 
-        print(nth_from_end(head, n).val)
         # 使用dummy node來解決刪除第一個node的情況
         dummy = ListNode(-1)
         dummy.next = head

@@ -1,7 +1,12 @@
 # Array, Hash Table, Matrix
 # reference:https://www.youtube.com/watch?v=T41rL0L3Pnw
+# Time:O(m*n)
+# Space:O(1)
 class Solution:
     def setZeroes(self, matrix) -> None:
+        # test cases
+        # [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+        # [[-4,-2147483648,6,-7,0],[-8,6,-8,-6,0],[2147483647,2,-9,-6,-10]]
         """
         Do not return anything, modify matrix in-place instead.
         """

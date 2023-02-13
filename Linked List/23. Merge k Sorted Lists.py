@@ -9,6 +9,38 @@ class ListNode:
         self.next = next
 
 
+from heapq import heappush, heappop
+
+
+# reference:https://www.youtube.com/watch?v=RCuBc4Zl-oY
+# reference:https://www.youtube.com/watch?v=ptYUCjfNhJY
+# Time complexity : O(N log k) where k is the number of linked lists.
+# The comparison cost will be reduced to O(log k) for every pop and insertion to heap.
+# But finding the node with the smallest value just costs O(1) time.
+# There are N nodes in the final linked list.
+
+# Space complexity :
+# O(n) Creating a new linked list costs O(n) space.
+# O(k) The code above present applies in-place method which cost O(1) space.
+# And the heap costs O(k) space (it's far less than N in most situations).
+class HeapSolution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        min_heap = []
+        for index, l in enumerate(lists):
+            if l:
+                heappush(min_heap, (l.val, index))
+        dummy = curr = ListNode()
+        while min_heap:
+            val, i = heappop(min_heap)
+            curr.next = ListNode(val=val)
+            curr = curr.next
+            lists[i] = lists[i].next
+            if lists[i]:
+                heappush(min_heap, (lists[i].val, i))
+
+        return dummy.next
+
+
 # Time complexity : O(NlogN) where N is the total number of nodes.
 # Collecting all the values costs O(N) time.
 # A stable sorting algorithm costs O(NlogN) time.
@@ -71,28 +103,6 @@ class Solution:
             curr.next = first_ptr
         if second_ptr:
             curr.next = second_ptr
-        return dummy.next
-
-
-from heapq import heappush, heappop
-
-
-# reference:https://www.youtube.com/watch?v=RCuBc4Zl-oY
-# reference:https://www.youtube.com/watch?v=ptYUCjfNhJY
-class HeapSolution:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        min_heap = []
-        for index, l in enumerate(lists):
-            if l:
-                heappush(min_heap, (l.val, index))
-        dummy = curr = ListNode()
-        while min_heap:
-            val, i = heappop(min_heap)
-            curr.next = ListNode(val=val)
-            if lists[i].next:
-                heappush(min_heap, (lists[i].next.val, i))
-                lists[i] = lists[i].next
-            curr = curr.next
         return dummy.next
 
 

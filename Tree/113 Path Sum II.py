@@ -23,18 +23,16 @@ class Solution:
         res = []
 
         def dfs(node, path, remaining_sum):
-            if node:
-                path.append(node.val)
-                if not node.left and not node.right and remaining_sum == node.val:
-                    res.append(list(path))
-                if node.left:
-                    dfs(node.left, path, remaining_sum - node.val)
-                if node.right:
-                    dfs(node.right, path, remaining_sum - node.val)
-                path.pop()
+            if not node:
+                return
+            path.append(node.val)
+            if not node.left and not node.right and remaining_sum == node.val:
+                res.append(list(path))
+            dfs(node.left, path, remaining_sum - node.val)
+            dfs(node.right, path, remaining_sum - node.val)
+            path.pop()
 
-        if root:
-            dfs(root, [], targetSum)
+        dfs(root, [], targetSum)
         return res
 
 

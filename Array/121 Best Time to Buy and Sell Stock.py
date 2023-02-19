@@ -3,7 +3,7 @@
 # Space:O(1) Only two variables are used.
 def maxProfit(prices):
     max_profit = 0
-    buy_price = sys.maxsize
+    buy_price = float('inf')
     for i in range(len(prices)):
         if prices[i] < buy_price:
             buy_price = prices[i]

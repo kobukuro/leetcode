@@ -1,5 +1,7 @@
 # Array, Two Pointers, Greedy
 # reference:https://www.youtube.com/watch?v=UuiTKBwPgAo
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 class Solution:
     def maxArea(self, height):
         res = 0

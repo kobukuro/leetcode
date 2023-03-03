@@ -19,9 +19,8 @@ from heapq import heappush, heappop
 # But finding the node with the smallest value just costs O(1) time.
 # There are N nodes in the final linked list.
 
-# Space complexity :
+# Space complexity : O(n)
 # O(n) Creating a new linked list costs O(n) space.
-# O(k) The code above present applies in-place method which cost O(1) space.
 # And the heap costs O(k) space (it's far less than N in most situations).
 class HeapSolution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:

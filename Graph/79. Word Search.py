@@ -25,8 +25,8 @@ class Solution:
             visited.remove((row, col))
             return False
 
-        for col in range(COLS):
-            for row in range(ROWS):
+        for row in range(ROWS):
+            for col in range(COLS):
                 if dfs(row, col, 0):
                     return True
         return False

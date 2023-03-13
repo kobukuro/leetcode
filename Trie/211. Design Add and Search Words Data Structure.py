@@ -52,7 +52,39 @@ class WordDictionary:
 
         return dfs(word, self)
 
+
 # Your WordDictionary object will be instantiated and called as such:
 # obj = WordDictionary()
 # obj.addWord(word)
 # param_2 = obj.search(word)
+
+
+class AnotherSolutionWordDictionary:
+
+    def __init__(self):
+        self.links = {}
+        self.is_end = False
+
+    def addWord(self, word: str) -> None:
+        curr = self
+        for w in word:
+            if w not in curr.links:
+                curr.links[w] = AnotherSolutionWordDictionary()
+            curr = curr.links[w]
+        curr.is_end = True
+
+    def search(self, word: str) -> bool:
+        def dfs(node, index):
+            if index == len(word):
+                return True if node.is_end else False
+            if word[index] != '.' and word[index] not in node.links:
+                return False
+            if word[index] == '.':
+                for key, value in node.links.items():
+                    if dfs(value, index + 1):
+                        return True
+                return False
+            else:
+                return dfs(node.links[word[index]], index + 1)
+
+        return dfs(self, 0)

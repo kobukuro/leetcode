@@ -25,6 +25,9 @@ class Solution:
         return self.preOrderTraversal(p) == self.preOrderTraversal(q)
 
 
+# Time complexity : O(N),
+# where N is a number of nodes in the tree, since one visits each node exactly once.
+# Space complexity : O(N) in the worst case of completely unbalanced tree, to keep a recursion stack.
 class AnotherSolution:
     def isSameTree(self, p, q):
         if not p and not q:

@@ -68,3 +68,44 @@ class Solution:
             elif direction == Direction.DOWN.value:
                 r += 1
         return res
+
+
+class SimplifiedSolution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        res = []
+        visited = set()
+        direction = Direction.RIGHT.value
+        ROWS = len(matrix)
+        COLS = len(matrix[0])
+        total_count = ROWS * COLS
+        curr_count = 0
+        r = c = 0
+        while curr_count < total_count:
+            if c == COLS or ((r, c) in visited and direction == Direction.RIGHT.value):
+                c -= 1
+                r += 1
+                direction = Direction.DOWN.value
+            elif r == ROWS or ((r, c) in visited and direction == Direction.DOWN.value):
+                r -= 1
+                c -= 1
+                direction = Direction.LEFT.value
+            elif c < 0 or ((r, c) in visited and direction == Direction.LEFT.value):
+                r -= 1
+                c += 1
+                direction = Direction.UP.value
+            elif r < 0 or ((r, c) in visited and direction == Direction.UP.value):
+                r += 1
+                c += 1
+                direction = Direction.RIGHT.value
+            visited.add((r, c))
+            res.append(matrix[r][c])
+            curr_count += 1
+            if direction == Direction.RIGHT.value:
+                c += 1
+            elif direction == Direction.DOWN.value:
+                r += 1
+            elif direction == Direction.LEFT.value:
+                c -= 1
+            elif direction == Direction.UP.value:
+                r -= 1
+        return res

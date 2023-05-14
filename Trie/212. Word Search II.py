@@ -27,7 +27,7 @@ class Trie:
             if i == 0:
                 target_node.is_end = False
             if len(target_node.links) == 0:
-                del parent_node.links[child_key]
+                parent_node.links.pop(child_key)
             else:
                 return
             i += 1

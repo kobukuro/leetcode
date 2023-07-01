@@ -16,6 +16,17 @@ def partition(arr, left, right, pivot):
 
 
 def quick_sort(arr, left, right):
+    """
+        Sorts an array using the Quick Sort algorithm.
+
+        :param arr: The array to be sorted.
+        :param left: The starting index of the subarray to be sorted.
+        :param right: The ending index of the subarray to be sorted.
+
+        :return:
+            None, The original array is sorted in-place.
+
+    """
     if left >= right:
         return
     pivot = arr[math.floor((left + right) / 2)]

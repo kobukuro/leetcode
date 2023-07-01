@@ -27,6 +27,14 @@ def quick_sort(arr, left, right):
             None, The original array is sorted in-place.
 
     """
+    """
+    When the left pointer is equal to the right pointer, 
+    it means that this subarray has only one element, 
+    so there is no need to sort it (it is already sorted). 
+    In that case, we can simply return. 
+    When the left pointer is greater than the right pointer, 
+    it means that it is not a valid subarray, so we can also return directly.
+    """
     if left >= right:
         return
     pivot = arr[math.floor((left + right) / 2)]

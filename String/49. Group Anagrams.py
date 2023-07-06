@@ -4,6 +4,7 @@
 # and K is the maximum length of a string in strs.
 # The outer loop has complexity O(N) as we iterate through each string.
 # Then, we sort each string in O(KlogK) time.
+
 # Space Complexity: O(NK), the total information content stored in hash_map.
 # It's O(NK) because every word inside the input array, are arrays of characters.
 # At the end of the algorithm, we return Lists of size N,

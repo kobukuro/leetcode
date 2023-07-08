@@ -27,7 +27,7 @@
 
 # Therefore, the worst case time complexity is O(N+K), which is O(n).
 
-# Space complexity : O(1). We only use two nodes (slow and fast) so the space complexity is O(1).
+# Space complexity : O(1). We only use two pointers (slow and fast) so the space complexity is O(1).
 class SolutionFastSlowPointers:
     def hasCycle(self, head) -> bool:
         slow, fast = head, head

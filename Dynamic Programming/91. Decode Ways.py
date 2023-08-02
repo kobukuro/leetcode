@@ -2,7 +2,7 @@
 
 # Time Complexity: O(N), where N is length of the string.
 # Memoization helps in pruning the recursion tree and hence decoding for an index only once.
-# Thus this solution is linear time complexity.
+# Thus, this solution is linear time complexity.
 
 # Space Complexity: O(N).
 # The dictionary used for memoization would take the space equal to the length of the string.

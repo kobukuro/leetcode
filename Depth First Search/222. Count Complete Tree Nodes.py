@@ -22,3 +22,11 @@ class Solution:
 
         inorder(root)
         return len(values)
+
+    def countNodesAnotherSolution(self, root: Optional[TreeNode]) -> int:
+        def dfs(node):
+            if not node:
+                return 0
+            return 1 + dfs(node.left) + dfs(node.right)
+
+        return dfs(root)

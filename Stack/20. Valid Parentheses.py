@@ -17,9 +17,6 @@ class Solution:
             else:
                 if not stack:
                     return False
-                else:
-                    if mapping[ele] != stack.pop():
-                        return False
-        if stack:
-            return False
-        return True
+                if mapping[ele] != stack.pop():
+                    return False
+        return True if not stack else False

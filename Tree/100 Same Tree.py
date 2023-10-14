@@ -32,9 +32,9 @@ class AnotherSolution:
     def isSameTree(self, p, q):
         if not p and not q:
             return True
-        if p and not q:
+        if not q:
             return False
-        if q and not p:
+        if not p:
             return False
         if p.val != q.val:
             return False

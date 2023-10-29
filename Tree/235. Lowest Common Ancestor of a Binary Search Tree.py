@@ -17,12 +17,12 @@ class TreeNode:
 # since the height of a skewed BST could be N.
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        def dfs(node):
-            if p.val > node.val and q.val > node.val:
-                return dfs(node.right)
-            elif p.val < node.val and q.val < node.val:
-                return dfs(node.left)
-            else:
-                return node
-
-        return dfs(root)
+        if p.val < root.val < q.val:
+            return root
+        if p.val > root.val > q.val:
+            return root
+        if root.val == p.val or root.val == q.val:
+            return root
+        if root.val > p.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        return self.lowestCommonAncestor(root.right, p, q)

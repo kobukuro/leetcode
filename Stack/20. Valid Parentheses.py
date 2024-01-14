@@ -19,4 +19,4 @@ class Solution:
                     return False
                 if mapping[ele] != stack.pop():
                     return False
-        return True if not stack else False
+        return not stack

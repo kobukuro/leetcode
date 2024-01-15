@@ -10,16 +10,18 @@ class TreeNode:
 # class Solution:
 #     # left -> root -> right
 #     def inorderTraversal(self, root):
-#         ans = []
+#         res = []
 #
-#         def helper(root):
-#             if root:
-#                 helper(root.left)
-#                 ans.append(root.val)
-#                 helper(root.right)
+#         def inorder(node):
+#             if not node:
+#                 return
+#             inorder(node.left)
+#             res.append(node.val)
+#             inorder(node.right)
 #
-#         helper(root)
-#         return ans
+#         inorder(root)
+#         return res
+
 
 # iterative  version
 # class Solution:

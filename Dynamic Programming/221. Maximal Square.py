@@ -20,7 +20,7 @@ class Solution:
         return max_edge * max_edge
 
 
-class BetterSolution:
+class OptimizedSolution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         max_edge = 0
         ROWS, COLS = len(matrix), len(matrix[0])
@@ -45,4 +45,4 @@ if __name__ == "__main__":
               ["1", "1", "1", "1", "1"],
               ["1", "1", "1", "1", "1"]]
     print(Solution().maximalSquare(matrix))  # Output: 4
-    print(BetterSolution().maximalSquare(matrix))  # Output: 4
+    print(OptimizedSolution().maximalSquare(matrix))  # Output: 4

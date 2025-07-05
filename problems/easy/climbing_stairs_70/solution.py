@@ -1,5 +1,6 @@
 # Tags: Memoization, Dynamic Programming
 class Solution:
+    # This solution will lead to a time limit exceeded error for larger inputs.
     # Time complexity : O(2^n). Because each node splits into two subtrees, and the height of the tree is n.
     # Space complexity : O(n). The depth of the recursion tree can go upto n.
     def climb_stairs_brute_force(self, n: int) -> int:

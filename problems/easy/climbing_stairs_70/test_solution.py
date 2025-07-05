@@ -6,25 +6,20 @@ from .solution import Solution
 class TestSolution:
     solution = Solution()
 
-    def test_climb_stairs_memoization_parameter_2(self):
-        assert self.solution.climb_stairs_memoization(2) == 2
-
-    def test_climb_stairs_memoization_parameter_3(self):
-        assert self.solution.climb_stairs_memoization(3) == 3
-
-    def test_climb_stairs_memoization_parameter_38(self):
-        """Test parameter 38 with timeout using multiprocessing"""
-        TestSolution._test_climb_stairs_with_timeout(38, 'climb_stairs_memoization', 63245986, 0.3)
-
-    def test_climb_stairs_dp_parameter_2(self):
-        assert self.solution.climb_stairs_dp(2) == 2
-
-    def test_climb_stairs_dp_parameter_3(self):
-        assert self.solution.climb_stairs_dp(3) == 3
-
-    def test_climb_stairs_dp_parameter_38(self):
-        """Test parameter 38 with timeout using multiprocessing"""
-        TestSolution._test_climb_stairs_with_timeout(38, 'climb_stairs_dp', 63245986, 0.3)
+    @pytest.mark.parametrize("method_name, n, expected, timeout", [
+        ('climb_stairs_memoization', 2, 2, None),
+        ('climb_stairs_memoization', 3, 3, None),
+        ('climb_stairs_memoization', 38, 63245986, 0.3),
+        ('climb_stairs_dp', 2, 2, None),
+        ('climb_stairs_dp', 3, 3, None),
+        ('climb_stairs_dp', 38, 63245986, 0.3),
+    ])
+    def test_climb_stairs(self, method_name, n, expected, timeout):
+        if timeout:
+            TestSolution._test_climb_stairs_with_timeout(n, method_name, expected, timeout)
+        else:
+            method = getattr(self.solution, method_name)
+            assert method(n) == expected
 
     @staticmethod
     def _run_climb_stairs(solution, n, method_name, queue):

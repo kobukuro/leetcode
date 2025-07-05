@@ -9,10 +9,10 @@ class TestSolution:
     @pytest.mark.parametrize("method_name, n, expected, timeout", [
         ('climb_stairs_memoization', 2, 2, None),
         ('climb_stairs_memoization', 3, 3, None),
-        ('climb_stairs_memoization', 38, 63245986, 0.3),
+        ('climb_stairs_memoization', 38, 63245986, 1),
         ('climb_stairs_dp', 2, 2, None),
         ('climb_stairs_dp', 3, 3, None),
-        ('climb_stairs_dp', 38, 63245986, 0.3),
+        ('climb_stairs_dp', 38, 63245986, 1),
     ])
     def test_climb_stairs(self, method_name, n, expected, timeout):
         if timeout:

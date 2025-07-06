@@ -1,3 +1,4 @@
+# Tags: Hash Table
 class Solution:
     def two_sum(self, nums, target):
         # We use a dictionary here,

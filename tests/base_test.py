@@ -73,6 +73,6 @@ class BaseTestSolution:
         """
         if timeout is None:
             method = getattr(solution, method_name)
-            assert method(*args) == expected
+            assert method(*args) == expected, f"Expected {expected}, got {method(*args)}"
         else:
             self._test_with_timeout(solution, method_name, args, expected, timeout)

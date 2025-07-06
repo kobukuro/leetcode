@@ -15,4 +15,4 @@ class TestSolution(BaseTestSolution):
         ('climb_stairs_dp', 38, 63245986, BaseTestSolution.DEFAULT_TIMEOUT),
     ])
     def test_climb_stairs(self, method_name, n, expected, timeout):
-        self._run_test(TestSolution.solution, method_name, (n,), expected, timeout)
+        self._run_test(self.solution, method_name, (n,), expected, timeout)

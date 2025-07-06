@@ -15,4 +15,4 @@ class TestSolution(BaseTestSolution):
          95, BaseTestSolution.DEFAULT_TIMEOUT),
     ])
     def test_length_of_longest_substring(self, method_name, s, expected, timeout):
-        self._run_test(TestSolution.solution, method_name, (s,), expected, timeout)
+        self._run_test(self.solution, method_name, (s,), expected, timeout)

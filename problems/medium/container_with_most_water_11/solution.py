@@ -1,9 +1,11 @@
-# Array, Two Pointers, Greedy
-# reference:https://www.youtube.com/watch?v=UuiTKBwPgAo
-# Time Complexity: O(n)
-# Space Complexity: O(1)
+# Tags: Two Pointers, Greedy
+from typing import List
+
+
 class Solution:
-    def maxArea(self, height):
+    # Time complexity: O(n)
+    # Space complexity: O(1)
+    def max_area(self, height: List[int]) -> int:
         res = 0
         l = 0
         r = len(height) - 1
@@ -15,8 +17,3 @@ class Solution:
             else:
                 l += 1
         return res
-
-
-if __name__ == '__main__':
-    height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-    print(Solution().maxArea(height=height))

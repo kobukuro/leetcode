@@ -4,8 +4,7 @@ from utils.data_structures import ListNode
 
 
 class Solution:
-    # Time complexity : O(n).
-    # Assume that n is the list's length, the time complexity is O(n).
+    # Time complexity : O(n), where n is the list's length.
     # Space complexity : O(1).
     def reverse_list_iterative(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev, curr = None, head
@@ -16,8 +15,7 @@ class Solution:
             curr = nxt
         return prev
 
-    # Time complexity : O(n).
-    # Assume that n is the list's length, the time complexity is O(n).
+    # Time complexity : O(n), where n is the list's length.
     # Space complexity : O(n).
     # The extra space comes from implicit stack space due to recursion. The recursion could go up to n levels deep.
     def reverse_list_recursive(self, head: Optional[ListNode]) -> Optional[ListNode]:

@@ -19,8 +19,8 @@ class Solution:
         queue = deque([root])  # Using deque for efficient pop from the left
         while queue:
             level = []
-            len_queue = len(queue)
-            for i in range(len_queue):
+            level_size = len(queue)
+            for i in range(level_size):
                 node = queue.popleft()
                 level.append(node.val)
                 if node.left:

@@ -20,7 +20,7 @@ class Solution:
         while queue:
             level = []
             level_size = len(queue)
-            for i in range(level_size):
+            for _ in range(level_size):
                 node = queue.popleft()
                 level.append(node.val)
                 if node.left:

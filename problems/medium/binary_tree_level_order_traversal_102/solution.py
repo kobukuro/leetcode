@@ -1,5 +1,6 @@
 # Tags: Tree, BFS
 from typing import List, Optional
+from collections import deque
 from utils.data_structures import TreeNode
 
 
@@ -15,12 +16,12 @@ class Solution:
         if not root:
             return []
         ans = []
-        queue = [root]
+        queue = deque([root])  # Using deque for efficient pop from the left
         while queue:
             level = []
             len_queue = len(queue)
             for i in range(len_queue):
-                node = queue.pop(0)
+                node = queue.popleft()
                 level.append(node.val)
                 if node.left:
                     queue.append(node.left)

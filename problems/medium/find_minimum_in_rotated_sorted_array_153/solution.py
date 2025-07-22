@@ -5,7 +5,7 @@ from typing import List
 class Solution:
     # Time complexity:O(log n)
     # Space complexity:O(1)
-    def find_min(self, nums: List[int]) -> int | None:
+    def find_min(self, nums: List[int]) -> int:
         if len(nums) == 1:
             return nums[0]
         left = 0
@@ -22,4 +22,3 @@ class Solution:
                 left = mid + 1
             else:
                 right = mid - 1
-        return None

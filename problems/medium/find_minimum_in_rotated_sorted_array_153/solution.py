@@ -1,11 +1,11 @@
-# Array, Binary Search
+# Tags: Array, Binary Search
 from typing import List
 
 
-# Time complexity:O(log n)
-# Space complexity:O(1)
 class Solution:
-    def findMin(self, nums: List[int]) -> int:
+    # Time complexity:O(log n)
+    # Space complexity:O(1)
+    def find_min(self, nums: List[int]) -> int | None:
         if len(nums) == 1:
             return nums[0]
         left = 0
@@ -22,3 +22,4 @@ class Solution:
                 left = mid + 1
             else:
                 right = mid - 1
+        return None

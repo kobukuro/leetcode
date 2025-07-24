@@ -2,7 +2,7 @@
 
 
 class Solution:
-    # fast, slow pointers solution
+    # Fast and slow pointers solution
     # Time complexity: O(n). Let us denote n as the total number of nodes in the linked list.
     # To analyze its time complexity, we consider the following two cases separately.
 
@@ -38,7 +38,7 @@ class Solution:
                 return True
         return False
 
-    # hash set solution
+    # Hash set solution
     # Let n be the total number of nodes in the linked list.
 
     # Time complexity: O(n). We visit each of the n elements in the list at most once.

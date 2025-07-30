@@ -11,5 +11,5 @@ class TestSolution(BaseTestSolution):
         ('exist', [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "SEE", True, None),
         ('exist', [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCB", False, None)
     ])
-    def test_num_islands(self, method_name, board, word, expected, timeout):
+    def test_exist(self, method_name, board, word, expected, timeout):
         self._run_test(self.solution, method_name, (board, word,), expected, timeout)

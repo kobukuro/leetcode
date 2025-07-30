@@ -12,5 +12,5 @@ class TestSolution(BaseTestSolution):
          [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]], None),
         ('pacific_atlantic', [[1]], [[0, 0]], None),
     ])
-    def test_num_islands(self, method_name, heights, expected, timeout):
+    def test_pacific_atlantic(self, method_name, heights, expected, timeout):
         self._run_test(self.solution, method_name, (heights,), expected, timeout)

@@ -12,5 +12,5 @@ class TestSolution(BaseTestSolution):
         ('fizz_buzz', 15,
          ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"], None),
     ])
-    def test_fib(self, method_name, n, expected, timeout):
+    def test_fizz_buzz(self, method_name, n, expected, timeout):
         self._run_test(self.solution, method_name, (n,), expected, timeout)

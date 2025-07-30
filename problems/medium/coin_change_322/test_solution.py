@@ -16,5 +16,5 @@ class TestSolution(BaseTestSolution):
         ('coin_change_dp', [1], 0, 0, BaseTestSolution.DEFAULT_TIMEOUT),
         ('coin_change_dp', [1, 2, 5], 100, 20, BaseTestSolution.DEFAULT_TIMEOUT),
     ])
-    def test_num_islands(self, method_name, coins, amount, expected, timeout):
+    def test_coin_change(self, method_name, coins, amount, expected, timeout):
         self._run_test(self.solution, method_name, (coins, amount,), expected, timeout)

@@ -25,7 +25,7 @@ class Solution:
     # Hence, the overall time complexity is O(MN).
 
     # Space complexity: O(M+N).
-    # There will be at most N recursive call to isSubtree.
+    # There will be at most N recursive call to is_subtree.
     # Now, each of these calls will have M recursive calls to is_same_tree.
     # Before calling is_same_tree, our call stack has at most O(N) elements
     # and might increase to O(N+M) during the call.

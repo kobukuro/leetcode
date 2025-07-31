@@ -31,7 +31,7 @@ class TestSolution:
     def test_example_1_count(self):
         strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
         expected = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
-        result = self.solution.group_anagrams_sorted_string(strs)
+        result = self.solution.group_anagrams_count(strs)
         self.assert_anagram_groups_equal(result, expected)
 
     def test_example_2_count(self):

@@ -23,7 +23,7 @@ class Solution:
     def group_anagrams_sorted_string(self, strs: List[str]) -> List[List[str]]:
         ans = defaultdict(list)
         for s in strs:
-            ans[tuple(sorted(s))].append(s)
+            ans[''.join(sorted(s))].append(s)
         return list(ans.values())
 
     # Time complexity: O(NK), where N is the length of strs,

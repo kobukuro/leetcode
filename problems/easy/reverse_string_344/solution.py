@@ -3,7 +3,7 @@ from typing import List
 
 
 class Solution:
-    # Time complexity: O(N) to swap N/2 element.
+    # Time complexity: O(N) to swap N/2 elements.
     # Space complexity: O(1), it's a constant space solution.
     def reverse_string(self, s: List[str]) -> None:
         l = 0

@@ -13,8 +13,8 @@ class Solution:
                  "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
         hash_set = set()
         for word in words:
-            morse_chars = []
+            new_word = ''
             for c in word:
-                morse_chars.append(codes[ord(c) - ord("a")])
-            hash_set.add(''.join(morse_chars))
+                new_word += codes[ord(c) - ord("a")]
+            hash_set.add(new_word)
         return len(hash_set)

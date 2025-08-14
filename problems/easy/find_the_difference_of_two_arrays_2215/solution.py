@@ -16,8 +16,8 @@ class Solution:
     # Breakdown:
     # nums1_set: O(N) space to store unique elements from nums1
     # nums2_set: O(M) space to store unique elements from nums2
-    # Result lists: In worst case, O(n + m) when there's no overlap between the sets
-    # Temporary space for list comprehensions: O(n + m) in worst case
+    # Result lists: In worst case, O(N + M) when there's no overlap between the sets
+    # Temporary space for list comprehensions: O(N + M) in worst case
     def find_difference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
         nums1_set = set(nums1)
         nums2_set = set(nums2)

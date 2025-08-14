@@ -10,7 +10,7 @@ class Solution:
     # Converting nums2 to nums2_set: O(M)
     # First list comprehension: O(N) - iterates through nums1_set and performs O(1) hash table lookups
     # Second list comprehension: O(M) - iterates through nums2_set and performs O(1) hash table lookups
-    # Total: O(n + m + n + m) = O(n + m)
+    # Total: O(N + M + N + M) = O(N + M)
 
     # Space complexity: O(N + M)
     # Breakdown:

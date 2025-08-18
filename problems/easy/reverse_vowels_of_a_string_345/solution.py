@@ -21,9 +21,9 @@ class Solution:
         l = 0
         r = len(lst) - 1
         while l < r:
-            while l <= len(lst) - 1 and not self.is_vowel(lst[l]):
+            while l <= r and not self.is_vowel(lst[l]):
                 l += 1
-            while r >= 0 and not self.is_vowel(lst[r]):
+            while r > l and not self.is_vowel(lst[r]):
                 r -= 1
             if l > r:
                 break

@@ -24,12 +24,10 @@ class Solution:
                 words[i] = words[i].lower()
             else:
                 new_word = ''
-                index = 0
-                for char in words[i]:
+                for index, char in enumerate(words[i]):
                     if index == 0:
                         new_word += char.upper()
                     else:
                         new_word += char.lower()
-                    index += 1
                 words[i] = new_word
         return ' '.join(words)

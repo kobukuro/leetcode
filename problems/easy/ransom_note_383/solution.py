@@ -11,7 +11,7 @@ class Solution:
     # Time complexity : O(m).
     # When m<n, we immediately return false. Therefore, the worst case occurs when m≥n.
     # Creating a dictionary of counts for the magazine is O(m),
-    # as each insertion/ count update is is O(1), and is done for each of the m characters.
+    # as each insertion/ count update is O(1), and is done for each of the m characters.
     # Likewise, creating the dictionary of counts for the ransom note is O(n).
     # We then iterate over the ransom note dictionary,
     # which contains at most n unique values, looking up their counterparts in the magazine dictionary.

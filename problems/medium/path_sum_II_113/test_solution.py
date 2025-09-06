@@ -30,7 +30,8 @@ class TestSolution:
                                                                      right=None))))
         target_sum = 22
         expected = [[5, 4, 11, 2], [5, 8, 4, 5]]
-        assert self.solution.path_sum(root=root, target_sum=target_sum) == expected
+        result = self.solution.path_sum(root=root, target_sum=target_sum)
+        assert sorted(result) == sorted(expected)
 
     def test_example_2(self):
         root = TreeNode(val=1,

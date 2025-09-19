@@ -17,7 +17,7 @@ class TestSolution:
         node4.next = node2
         assert self.solution.has_cycle_two_pointers(node1)
 
-    def test_example_1_two_pointers(self):
+    def test_example_2_two_pointers(self):
         node1 = ListNode(1)
         node2 = ListNode(2)
         node1.next = node2

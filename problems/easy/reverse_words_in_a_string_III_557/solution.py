@@ -6,14 +6,14 @@ class Solution:
 
         Time Complexity: O(n)
         - s.split(): O(n) to split the string into words
-        - List comprehension with word[::-1]: O(n) total to reverse all characters
+        - Generator expression with word[::-1]: O(n) total to reverse all characters
         - ' '.join(): O(n) to join the reversed words back together
         - Overall: O(n) where n is the length of the input string
 
         Space Complexity: O(n)
         - s.split() creates a list of words: O(n) characters stored
-        - List comprehension creates new reversed strings: O(n) characters
+        - Generator expression produces reversed strings on-the-fly: O(1) auxiliary space
         - Final joined string: O(n) characters
         - Overall: O(n) where n is the length of the input string
         """
-        return ' '.join([word[::-1] for word in s.split()])
+        return ' '.join(word[::-1] for word in s.split())

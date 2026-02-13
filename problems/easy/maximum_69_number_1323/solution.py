@@ -4,15 +4,14 @@
 class Solution:
     def maximum69_number(self, num: int) -> int:
         """
-            Let L be the maximum number of digits nums can have (L=4 in this problem).
+            Let L be the number of digits of the input number (L <= 4 in this problem).
 
             Time complexity: O(L)
-            Since the input number num has up to most L digits,
-            it requires O(L) time to convert it to an equivalent object and vice versa.
-            To sum up, the time complexity is O(L).
+            Since the input number has at most L digits,
+            it requires O(L) time to convert it to a list of characters, modify it, and convert it back.
 
             Space complexity: O(L)
-            We create an object of length L.
+            We create a list of characters whose length is L.
         """
         num_char_list = list(str(num))
         for i in range(len(num_char_list)):

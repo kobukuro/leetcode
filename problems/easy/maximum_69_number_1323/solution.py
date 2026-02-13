@@ -2,7 +2,7 @@
 
 
 class Solution:
-    def maximum69_number(self, num_char_list: int) -> int:
+    def maximum69_number(self, num: int) -> int:
         """
             Let L be the maximum number of digits nums can have (L=4 in this problem).
 
@@ -14,7 +14,7 @@ class Solution:
             Space complexity: O(L)
             We create an object of length L.
         """
-        num_char_list = list(str(num_char_list))
+        num_char_list = list(str(num))
         for i in range(len(num_char_list)):
             if num_char_list[i] == '6':
                 num_char_list[i] = '9'

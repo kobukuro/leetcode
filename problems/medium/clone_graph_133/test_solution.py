@@ -22,6 +22,8 @@ class TestSolution:
 
             # Avoid infinite loops
             if orig in visited_orig:
+                # If we've seen this original node, we should have seen the clone too
+                assert cln in visited_clone
                 return
             visited_orig.add(orig)
             visited_clone.add(cln)

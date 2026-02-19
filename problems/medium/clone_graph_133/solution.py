@@ -11,13 +11,13 @@ class Node:
 class Solution:
     def clone_graph(self, node: 'Node', mapping=None) -> Optional['Node']:
         """
-        Time complexity: O(N + M), where N is a number of nodes (vertices) and M is a number of edges.
+        Time complexity: O(N + M), where N is the number of nodes (vertices) and M is the number of edges.
 
-        Space complexity: O(N). This space is occupied by the visited hash map
-        and in addition to that, space would also be occupied by the recursion stack
+        Space complexity: O(N). This space is occupied by the visited hash map,
+        and in addition to that, space is also occupied by the recursion stack
         since we are adopting a recursive approach here.
-        The space occupied by the recursion stack would be equal to O(H)
-        where H is the height of the graph. Overall, the space complexity would be O(N).
+        The recursion stack depth can be up to O(N) in the worst case (for example,
+        when the graph forms a simple chain). Overall, the space complexity is O(N).
         """
         if mapping is None:
             mapping = {}

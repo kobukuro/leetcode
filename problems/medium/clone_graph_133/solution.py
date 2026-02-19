@@ -19,12 +19,12 @@ class Solution:
         The recursion stack depth can be up to O(N) in the worst case (for example,
         when the graph forms a simple chain). Overall, the space complexity is O(N).
         """
+        if node is None:
+            return None
         if mapping is None:
             mapping = {}
         if node in mapping:
             return mapping[node]
-        if node is None:
-            return None
         copy = Node(node.val)
         mapping[node] = copy
         for nei in node.neighbors:

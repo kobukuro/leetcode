@@ -18,16 +18,16 @@ class TestSolution:
     def test_example_1(self):
         """
         Example 1:
-        Input: ["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]
+        Input: ["ParkingSystem", "add_car", "add_car", "add_car", "add_car"]
                [[1, 1, 0], [1], [2], [3], [1]]
         Output: [null, true, true, false, false]
 
         Explanation:
         ParkingSystem parkingSystem = new ParkingSystem(1, 1, 0);
-        parkingSystem.addCar(1); // return true because there is 1 available slot for a big car
-        parkingSystem.addCar(2); // return true because there is 1 available slot for a medium car
-        parkingSystem.addCar(3); // return false because there is no available slot for a small car
-        parkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied.
+        parkingSystem.add_car(1); // return true because there is 1 available slot for a big car
+        parkingSystem.add_car(2); // return true because there is 1 available slot for a medium car
+        parkingSystem.add_car(3); // return false because there is no available slot for a small car
+        parkingSystem.add_car(1); // return false because there is no available slot for a big car. It is already occupied.
         """
         self.call(
             ["ParkingSystem", "add_car", "add_car", "add_car", "add_car"],

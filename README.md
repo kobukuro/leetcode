@@ -13,9 +13,9 @@ A collection of LeetCode problem solutions implemented in Python with detailed c
 
 🔄 **Currently migrating from old structure to new directory structure**
 
-This project is being reorganized. The following problems have been migrated to the new structure:
+This project is being reorganized.
 
-- ✅ Migrated problems in `problems/` directory (83 problems listed below)
+- ✅ Migrated problems in `problems/` directory
 - ⏳ Legacy problems still being migrated
 
 ## Project Structure

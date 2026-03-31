@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 58 problems solved
+Total: 59 problems solved
 
 ## Solutions
 
@@ -61,6 +61,7 @@ Total: 58 problems solved
 | 2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [solution.py](../problems/easy/convert_the_temperature_2469/solution.py) | [test_solution.py](../problems/easy/convert_the_temperature_2469/test_solution.py) |
 | 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) | [solution.py](../problems/easy/remove_trailing_zeros_from_a_string_2710/solution.py) | [test_solution.py](../problems/easy/remove_trailing_zeros_from_a_string_2710/test_solution.py) |
 | 2798 | [Number of Employees Who Met the Target](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | [solution.py](../problems/easy/number_of_employees_who_met_the_target_2798/solution.py) | [test_solution.py](../problems/easy/number_of_employees_who_met_the_target_2798/test_solution.py) |
+| 2828 | [Check if a String Is an Acronym of Words](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/) | [solution.py](../problems/easy/check_if_a_string_is_an_acronym_of_words_2828/solution.py) | [test_solution.py](../problems/easy/check_if_a_string_is_an_acronym_of_words_2828/test_solution.py) |
 | 2942 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/) | [solution.py](../problems/easy/find_words_containing_character_2942/solution.py) | [test_solution.py](../problems/easy/find_words_containing_character_2942/test_solution.py) |
 | 3110 | [Score of a String](https://leetcode.com/problems/score-of-a-string/) | [solution.py](../problems/easy/score_of_a_string_3110/solution.py) | [test_solution.py](../problems/easy/score_of_a_string_3110/test_solution.py) |
 | 3289 | [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | [solution.py](../problems/easy/the_two_sneaky_numbers_of_digitville_3289/solution.py) | [test_solution.py](../problems/easy/the_two_sneaky_numbers_of_digitville_3289/test_solution.py) |

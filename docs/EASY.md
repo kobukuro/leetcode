@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 59 problems solved
+Total: 60 problems solved
 
 ## Solutions
 
@@ -46,6 +46,7 @@ Total: 59 problems solved
 | 1603 | [Design Parking System](https://leetcode.com/problems/design-parking-system/) | [solution.py](../problems/easy/design_parking_system_1603/solution.py) | [test_solution.py](../problems/easy/design_parking_system_1603/test_solution.py) |
 | 1662 | [Check If Two String Arrays Are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | [solution.py](../problems/easy/check_if_two_string_arrays_are_equivalent_1662/solution.py) | [test_solution.py](../problems/easy/check_if_two_string_arrays_are_equivalent_1662/test_solution.py) |
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [solution.py](../problems/easy/richest_customer_wealth_1672/solution.py) | [test_solution.py](../problems/easy/richest_customer_wealth_1672/test_solution.py) |
+| 1684 | [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) | [solution.py](../problems/easy/count_the_number_of_consistent_strings_1684/solution.py) | [test_solution.py](../problems/easy/count_the_number_of_consistent_strings_1684/test_solution.py) |
 | 1773 | [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [solution.py](../problems/easy/count_items_matching_a_rule_1773/solution.py) | [test_solution.py](../problems/easy/count_items_matching_a_rule_1773/test_solution.py) |
 | 1816 | [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [solution.py](../problems/easy/truncate_sentence_1816/solution.py) | [test_solution.py](../problems/easy/truncate_sentence_1816/test_solution.py) |
 | 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | [solution.py](../problems/easy/concatenation_of_array_1929/solution.py) | [test_solution.py](../problems/easy/concatenation_of_array_1929/test_solution.py) |

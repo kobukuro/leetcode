@@ -1,6 +1,6 @@
 # Medium Problems
 
-Total: 24 problems solved
+Total: 25 problems solved
 
 ## Solutions
 
@@ -11,6 +11,7 @@ Total: 24 problems solved
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [solution.py](../problems/medium/search_in_rotated_sorted_array_33/solution.py) | [test_solution.py](../problems/medium/search_in_rotated_sorted_array_33/test_solution.py) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [solution.py](../problems/medium/group_anagrams_49/solution.py) | [test_solution.py](../problems/medium/group_anagrams_49/test_solution.py) |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [solution.py](../problems/medium/merge_intervals_56/solution.py) | [test_solution.py](../problems/medium/merge_intervals_56/test_solution.py) |
+| 57 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [solution.py](../problems/medium/insert_interval_57/solution.py) | [test_solution.py](../problems/medium/insert_interval_57/test_solution.py) |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [solution.py](../problems/medium/unique_paths_62/solution.py) | [test_solution.py](../problems/medium/unique_paths_62/test_solution.py) |
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | [solution.py](../problems/medium/word_search_79/solution.py) | [test_solution.py](../problems/medium/word_search_79/test_solution.py) |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [solution.py](../problems/medium/binary_tree_level_order_traversal_102/solution.py) | [test_solution.py](../problems/medium/binary_tree_level_order_traversal_102/test_solution.py) |

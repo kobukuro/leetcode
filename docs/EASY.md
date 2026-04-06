@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 60 problems solved
+Total: 61 problems solved
 
 ## Solutions
 
@@ -35,6 +35,7 @@ Total: 60 problems solved
 | 709 | [To Lower Case](https://leetcode.com/problems/to-lower-case/) | [solution.py](../problems/easy/to_lower_case_709/solution.py) | [test_solution.py](../problems/easy/to_lower_case_709/test_solution.py) |
 | 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [solution.py](../problems/easy/jewels_and_stones_771/solution.py) | [test_solution.py](../problems/easy/jewels_and_stones_771/test_solution.py) |
 | 804 | [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | [solution.py](../problems/easy/unique_morse_code_words_804/solution.py) | [test_solution.py](../problems/easy/unique_morse_code_words_804/test_solution.py) |
+| 929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [solution.py](../problems/easy/unique_email_addresses_929/solution.py) | [test_solution.py](../problems/easy/unique_email_addresses_929/test_solution.py) |
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [solution.py](../problems/easy/squares_of_a_sorted_array_977/solution.py) | [test_solution.py](../problems/easy/squares_of_a_sorted_array_977/test_solution.py) |
 | 1119 | [Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/) | [solution.py](../problems/easy/remove_vowels_from_a_string_1119/solution.py) | [test_solution.py](../problems/easy/remove_vowels_from_a_string_1119/test_solution.py) |
 | 1160 | [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [solution.py](../problems/easy/find_words_that_can_be_formed_by_characters_1160/solution.py) | [test_solution.py](../problems/easy/find_words_that_can_be_formed_by_characters_1160/test_solution.py) |

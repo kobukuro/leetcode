@@ -1,6 +1,6 @@
 # Medium Problems
 
-Total: 25 problems solved
+Total: 26 problems solved
 
 ## Solutions
 
@@ -22,6 +22,7 @@ Total: 25 problems solved
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [solution.py](../problems/medium/house_robber_198/solution.py) | [test_solution.py](../problems/medium/house_robber_198/test_solution.py) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [solution.py](../problems/medium/number_of_islands_200/solution.py) | [test_solution.py](../problems/medium/number_of_islands_200/test_solution.py) |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | [solution.py](../problems/medium/course_schedule_207/solution.py) | [test_solution.py](../problems/medium/course_schedule_207/test_solution.py) |
+| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [solution.py](../problems/medium/implement_trie_prefix_tree_208/solution.py) | [test_solution.py](../problems/medium/implement_trie_prefix_tree_208/test_solution.py) |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [solution.py](../problems/medium/kth_smallest_element_in_a_bst_230/solution.py) | [test_solution.py](../problems/medium/kth_smallest_element_in_a_bst_230/test_solution.py) |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [solution.py](../problems/medium/lowest_common_ancestor_of_a_binary_search_tree_235/solution.py) | [test_solution.py](../problems/medium/lowest_common_ancestor_of_a_binary_search_tree_235/test_solution.py) |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [solution.py](../problems/medium/lowest_common_ancestor_of_a_binary_tree_236/solution.py) | [test_solution.py](../problems/medium/lowest_common_ancestor_of_a_binary_tree_236/test_solution.py) |

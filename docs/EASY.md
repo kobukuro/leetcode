@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 61 problems solved
+Total: 62 problems solved
 
 ## Solutions
 
@@ -60,6 +60,7 @@ Total: 61 problems solved
 | 2185 | [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [solution.py](../problems/easy/counting_words_with_a_given_prefix_2185/solution.py) | [test_solution.py](../problems/easy/counting_words_with_a_given_prefix_2185/test_solution.py) |
 | 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | [solution.py](../problems/easy/find_the_difference_of_two_arrays_2215/solution.py) | [test_solution.py](../problems/easy/find_the_difference_of_two_arrays_2215/test_solution.py) |
 | 2315 | [Count Asterisks](https://leetcode.com/problems/count-asterisks/) | [solution.py](../problems/easy/count_asterisks_2315/solution.py) | [test_solution.py](../problems/easy/count_asterisks_2315/test_solution.py) |
+| 2351 | [First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) | [solution.py](../problems/easy/first_letter_to_appear_twice_2351/solution.py) | [test_solution.py](../problems/easy/first_letter_to_appear_twice_2351/test_solution.py) |
 | 2469 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/) | [solution.py](../problems/easy/convert_the_temperature_2469/solution.py) | [test_solution.py](../problems/easy/convert_the_temperature_2469/test_solution.py) |
 | 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) | [solution.py](../problems/easy/remove_trailing_zeros_from_a_string_2710/solution.py) | [test_solution.py](../problems/easy/remove_trailing_zeros_from_a_string_2710/test_solution.py) |
 | 2798 | [Number of Employees Who Met the Target](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | [solution.py](../problems/easy/number_of_employees_who_met_the_target_2798/solution.py) | [test_solution.py](../problems/easy/number_of_employees_who_met_the_target_2798/test_solution.py) |

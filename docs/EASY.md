@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 62 problems solved
+Total: 63 problems solved
 
 ## Solutions
 
@@ -39,6 +39,7 @@ Total: 62 problems solved
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [solution.py](../problems/easy/squares_of_a_sorted_array_977/solution.py) | [test_solution.py](../problems/easy/squares_of_a_sorted_array_977/test_solution.py) |
 | 1119 | [Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/) | [solution.py](../problems/easy/remove_vowels_from_a_string_1119/solution.py) | [test_solution.py](../problems/easy/remove_vowels_from_a_string_1119/test_solution.py) |
 | 1160 | [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [solution.py](../problems/easy/find_words_that_can_be_formed_by_characters_1160/solution.py) | [test_solution.py](../problems/easy/find_words_that_can_be_formed_by_characters_1160/test_solution.py) |
+| 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [solution.py](../problems/easy/unique_number_of_occurrences_1207/solution.py) | [test_solution.py](../problems/easy/unique_number_of_occurrences_1207/test_solution.py) |
 | 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | [solution.py](../problems/easy/maximum_69_number_1323/solution.py) | [test_solution.py](../problems/easy/maximum_69_number_1323/test_solution.py) |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | [solution.py](../problems/easy/how_many_numbers_are_smaller_than_the_current_number_1365/solution.py) | [test_solution.py](../problems/easy/how_many_numbers_are_smaller_than_the_current_number_1365/test_solution.py) |
 | 1389 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/) | [solution.py](../problems/easy/create_target_array_in_the_given_order_1389/solution.py) | [test_solution.py](../problems/easy/create_target_array_in_the_given_order_1389/test_solution.py) |

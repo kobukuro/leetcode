@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 63 problems solved
+Total: 64 problems solved
 
 ## Solutions
 
@@ -13,6 +13,7 @@ Total: 63 problems solved
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [solution.py](../problems/easy/length_of_last_word_58/solution.py) | [test_solution.py](../problems/easy/length_of_last_word_58/test_solution.py) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [solution.py](../problems/easy/climbing_stairs_70/solution.py) | [test_solution.py](../problems/easy/climbing_stairs_70/test_solution.py) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [solution.py](../problems/easy/merge_sorted_array_88/solution.py) | [test_solution.py](../problems/easy/merge_sorted_array_88/test_solution.py) |
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [solution.py](../problems/easy/binary_tree_inorder_traversal_94/solution.py) | [test_solution.py](../problems/easy/binary_tree_inorder_traversal_94/test_solution.py) |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [solution.py](../problems/easy/same_tree_100/solution.py) | [test_solution.py](../problems/easy/same_tree_100/test_solution.py) |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [solution.py](../problems/easy/maximum_depth_of_binary_tree_104/solution.py) | [test_solution.py](../problems/easy/maximum_depth_of_binary_tree_104/test_solution.py) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | [solution.py](../problems/easy/path_sum_112/solution.py) | [test_solution.py](../problems/easy/path_sum_112/test_solution.py) |

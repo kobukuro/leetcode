@@ -1,6 +1,6 @@
 # Easy Problems
 
-Total: 64 problems solved
+Total: 65 problems solved
 
 ## Solutions
 
@@ -18,6 +18,7 @@ Total: 64 problems solved
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [solution.py](../problems/easy/maximum_depth_of_binary_tree_104/solution.py) | [test_solution.py](../problems/easy/maximum_depth_of_binary_tree_104/test_solution.py) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | [solution.py](../problems/easy/path_sum_112/solution.py) | [test_solution.py](../problems/easy/path_sum_112/test_solution.py) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [solution.py](../problems/easy/linked_list_cycle_141/solution.py) | [test_solution.py](../problems/easy/linked_list_cycle_141/test_solution.py) |
+| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [solution.py](../problems/easy/binary_tree_preorder_traversal_144/solution.py) | [test_solution.py](../problems/easy/binary_tree_preorder_traversal_144/test_solution.py) |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [solution.py](../problems/easy/number_of_1_bits_191/solution.py) | [test_solution.py](../problems/easy/number_of_1_bits_191/test_solution.py) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [solution.py](../problems/easy/reverse_linked_list_206/solution.py) | [test_solution.py](../problems/easy/reverse_linked_list_206/test_solution.py) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [solution.py](../problems/easy/contains_duplicate_217/solution.py) | [test_solution.py](../problems/easy/contains_duplicate_217/test_solution.py) |
